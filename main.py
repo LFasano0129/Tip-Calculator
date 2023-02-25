@@ -20,7 +20,7 @@ bill_with_tip = tip_percent_int / 100 * total_bill_float + total_bill_float
 bill_per_person = bill_with_tip / total_ppl_int
 
 # round to two decimals
-final_bill = round(bill_per_person, 2)
+final_bill = "{:.2f}".format(bill_per_person)
 
 # f string to display the amount each person should pay
 print(f"Each person should pay ${final_bill}")
